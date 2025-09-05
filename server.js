@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 
 // MongoDB connection options
-const mongoDBURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/new_database_name';
+const mongoDBURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/new_database'; // Updated database name
 
 // Connect to MongoDB
 mongoose.connect(mongoDBURI, { useNewUrlParser: true, useUnifiedTopology: true })
