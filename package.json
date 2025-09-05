@@ -1,14 +1,1 @@
-{
-  "name": "phan-tich-du-lieu-doanh-nghiep",
-  "version": "1.0.0",
-  "description": "Một ứng dụng web phân tích dữ liệu doanh nghiệp",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo 'No tests specified' && exit 0"
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "mongoose": "^5.10.9"
-  }
-}
+{"name":"phan-tich-du-lieu-doanh-nghiep","version":"1.0.0","description":"Một ứng dụng web phân tích dữ liệu doanh nghiệp","main":"server.js","scripts":{"start":"node server.js","test":"echo 'No tests specified' && exit 0"},"dependencies":{"express":"^5.0.0","mongoose":"^5.10.9"}}
