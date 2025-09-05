@@ -7,8 +7,11 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express.json());
 
+// MongoDB connection options
+const mongoDBURI = 'mongodb://localhost:27017/phan_tich_du_lieu';
+
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/phan_tich_du_lieu', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(mongoDBURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Kết nối tới MongoDB thành công!'))
   .catch(err => console.error('Không thể kết nối tới MongoDB:', err));
 
